@@ -6,7 +6,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constants.dart';
 //import 'package:wave_slider/wave_slider.dart';
 
-enum Gender { male, female }
+enum Gender {
+  male,
+  female,
+}
 int height = 171;
 int weight = 72;
 int age = 22;
@@ -50,8 +53,10 @@ class _InputPageState extends State<InputPage> {
                     color: selectedGender == Gender.male
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    cardChild:
-                        IconContent(icon: FontAwesomeIcons.mars, label: 'MALE'),
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'MALE',
+                    ),
                   ),
                 ),
                 Expanded(
@@ -65,7 +70,9 @@ class _InputPageState extends State<InputPage> {
                         ? kActiveCardColor
                         : kInactiveCardColor,
                     cardChild: IconContent(
-                        icon: FontAwesomeIcons.venus, label: 'FEMALE'),
+                      icon: FontAwesomeIcons.venus,
+                      label: 'FEMALE',
+                    ),
                   ),
                 ),
               ],
@@ -308,7 +315,10 @@ class RoundIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return RawMaterialButton(
       child: Icon(icon),
-      constraints: BoxConstraints.tightFor(width: 50, height: 50),
+      constraints: BoxConstraints.tightFor(
+        width: 50,
+        height: 50,
+      ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
