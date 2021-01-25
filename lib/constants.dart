@@ -16,3 +16,36 @@ const kNumberTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   letterSpacing: 2,
 );
+
+const kAppBarStyle = TextStyle(
+  fontSize: 22,
+  fontFamily: "Quicksand",
+  fontWeight: FontWeight.w700,
+  letterSpacing: 2,
+);
+
+const kLargeTextStyle = TextStyle(
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.bold,
+  fontSize: 30,
+  letterSpacing: 10,
+);
+
+const kResultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontFamily: 'Quicksand',
+  fontWeight: FontWeight.bold,
+  fontSize: 22,
+  letterSpacing: 2,
+);
+
+const kBMIResultStyle = TextStyle(
+  fontSize: 100,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'Quicksand',
+);
+
+const kResultSuggestionStyle = TextStyle(
+  fontFamily: 'Quicksand',
+  fontSize: 20,
+);
