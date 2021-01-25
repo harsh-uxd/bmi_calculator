@@ -35,7 +35,7 @@ const kResultTextStyle = TextStyle(
   color: Color(0xFF24D876),
   fontFamily: 'Quicksand',
   fontWeight: FontWeight.bold,
-  fontSize: 22,
+  fontSize: 30,
   letterSpacing: 2,
 );
 
@@ -46,6 +46,7 @@ const kBMIResultStyle = TextStyle(
 );
 
 const kResultSuggestionStyle = TextStyle(
+  height: 2,
   fontFamily: 'Quicksand',
   fontSize: 20,
 );

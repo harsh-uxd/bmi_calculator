@@ -4,6 +4,15 @@ import '../components/bmi-card.dart';
 import '../constants.dart';
 
 class ResultPage extends StatelessWidget {
+  ResultPage({
+    @required this.bmiResult,
+    @required this.resultText,
+    @required this.suggestionText,
+  });
+  final String bmiResult;
+  final String resultText;
+  final String suggestionText;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,17 +36,20 @@ class ResultPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      'NORMAL',
+                      resultText,
                       style: kResultTextStyle,
                     ),
                     Text(
-                      '24.2',
+                      bmiResult,
                       style: kBMIResultStyle,
                     ),
-                    Text(
-                      'Your BMI is GREAT! Keep up with the health lifestyle.',
-                      style: kResultSuggestionStyle,
-                      textAlign: TextAlign.center,
+                    Padding(
+                      padding: const EdgeInsets.all(25),
+                      child: Text(
+                        suggestionText,
+                        style: kResultSuggestionStyle,
+                        textAlign: TextAlign.center,
+                      ),
                     )
                   ],
                 ),
